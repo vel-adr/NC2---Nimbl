@@ -28,7 +28,6 @@
 		E98F4BAB288FE9AC0042541C /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98F4BAA288FE9AC0042541C /* DummyData.swift */; };
 		E9C5F65E289183EB004AED1E /* AddNewResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5F65D289183EB004AED1E /* AddNewResourceView.swift */; };
 		E9C5F661289250BF004AED1E /* DailyStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5F660289250BF004AED1E /* DailyStatusBar.swift */; };
-		E9C5F664289295D6004AED1E /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5F663289295D6004AED1E /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +52,6 @@
 		E98F4BAA288FE9AC0042541C /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		E9C5F65D289183EB004AED1E /* AddNewResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewResourceView.swift; sourceTree = "<group>"; };
 		E9C5F660289250BF004AED1E /* DailyStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStatusBar.swift; sourceTree = "<group>"; };
-		E9C5F663289295D6004AED1E /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +153,6 @@
 		E9C5F662289295C3004AED1E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				E9C5F663289295D6004AED1E /* DateFormatter.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -241,7 +238,6 @@
 				E94453D9288D2FDE007D14E8 /* ContentView.swift in Sources */,
 				E952C484288FD92200C47BC9 /* LogBookViewModel.swift in Sources */,
 				E952C476288F8F5300C47BC9 /* MainView.swift in Sources */,
-				E9C5F664289295D6004AED1E /* DateFormatter.swift in Sources */,
 				E952C47E288FB2F000C47BC9 /* ListItemView.swift in Sources */,
 				E9C5F65E289183EB004AED1E /* AddNewResourceView.swift in Sources */,
 				E9C5F661289250BF004AED1E /* DailyStatusBar.swift in Sources */,

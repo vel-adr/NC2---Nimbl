@@ -88,7 +88,8 @@ struct DashboardView: View {
                         }
                         .headerProminence(.increased)
 
-                        
+                        //Reflection section
+                        //Currently still not working
                         Section {
                             ForEach(resourceVM.fetchRecent(), id: \.id) { el in
                                 NavigationLink {
