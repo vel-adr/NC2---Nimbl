@@ -14,7 +14,7 @@ struct ListItemView: View {
     
     var body: some View {
         HStack {
-            VStack(alignment: .leading, spacing: 8) {
+            VStack(alignment: .leading, spacing: 12) {
                 HStack(alignment: .firstTextBaseline) {
                     Text(title)
                         .fontWeight(.semibold)
@@ -23,7 +23,7 @@ struct ListItemView: View {
                         .foregroundColor(.secondary)
                 }
                 Text(description)
-                    .font(.footnote)
+                    .font(.caption)
                     .lineLimit(1)
             }
             

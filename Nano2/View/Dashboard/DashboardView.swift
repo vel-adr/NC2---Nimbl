@@ -17,7 +17,7 @@ struct DashboardView: View {
             ZStack {
                 VStack {
                     Rectangle()
-                        .fill(.orange)
+                        .fill(Color("RectangleBg"))
                         .frame(maxHeight: 155)
                         .cornerRadius(20)
                         .ignoresSafeArea()
@@ -55,7 +55,7 @@ struct DashboardView: View {
                         //Today's log book section
                         Section {
                             if logBookVM.selectedLogBook.description == "" {
-                                Text("There are no resource yet.")
+                                Text("Today's log book is still empty")
                                     .foregroundColor(.secondary)
                                     .font(.footnote)
                             } else {
@@ -78,7 +78,7 @@ struct DashboardView: View {
                                     }
                                 }
                             } else {
-                                Text("There are no resource yet.")
+                                Text("There are no resource yet")
                                     .foregroundColor(.secondary)
                                     .font(.footnote)
                             }
@@ -91,12 +91,18 @@ struct DashboardView: View {
                         //Reflection section
                         //Currently still not working
                         Section {
-                            ForEach(resourceVM.fetchRecent(), id: \.id) { el in
-                                NavigationLink {
-                                    AddNewResourceView(selectedResource: el, mode: "Edit")
-                                } label: {
-                                    ListItemView(title: el.title, date: "dd/mm/yyyy", description: el.description)
+                            if reflectionVM.fetchRecent().count > 0 {
+                                ForEach(reflectionVM.fetchRecent(), id: \.id) { el in
+                                    NavigationLink {
+                                        ReflectionDetailView(selectedReflection: el, mode: "Edit")
+                                    } label: {
+                                        ListItemView(title: el.title, date: el.updateTime.formatted(.dateTime.day().month().year()), description: el.description )
+                                    }
                                 }
+                            } else {
+                                Text("There are no reflection yet")
+                                    .foregroundColor(.secondary)
+                                    .font(.footnote)
                             }
                         } header: {
                             Text("Recent Reflection")

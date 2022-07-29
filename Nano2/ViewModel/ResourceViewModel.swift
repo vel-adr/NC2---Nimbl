@@ -28,7 +28,7 @@ class ResourceViewModel: ObservableObject {
                 $0.updateTime > $1.updateTime
             }
             if resourceCount < 3 {
-                for i in 0...resourceCount {
+                for i in 0...resourceCount-1 {
                     arr.append(sorted[i])
                 }
             } else {

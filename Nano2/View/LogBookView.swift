@@ -21,7 +21,7 @@ struct LogBookView: View {
                     .datePickerStyle(.graphical)
             }
             Section {
-                ScanTextEditor("Enter your activity here...", text: $logBookVM.selectedLogBook.description)
+                TextEditor(text: $logBookVM.selectedLogBook.description)
                     .frame(height: 200)
                     .onChange(of: logBookVM.selectedLogBook.description) { newValue in
                         logBookVM.update()
